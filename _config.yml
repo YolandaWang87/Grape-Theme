@@ -9,16 +9,21 @@ theme_settings :
 
   # Profile Settings
   profile :
-    image : assets/img/smile.png
+    image : assets/img/PEI_beach.jpg
     username : Yolanda Wang
-    description : Grape-Theme is my first jekyll theme and you can customize this theme easily.
+    description : This is my study blog and sandbox of web development.
     experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
+      - start : 2015-07-22
+        experience : Geographic data processing
     skills : 
-      - skill : HTML5 & CSS
-        value : 85  # Percent value
+      - skill : Matlab
+        value : 33  # Percent value
+      - skill : Python 
+        value : 5
+      - skill : GIS 
+        value : 5
+      - skill : Web Development 
+        value : 5
         
   # Icons
   icons :
