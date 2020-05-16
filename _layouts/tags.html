@@ -4,9 +4,11 @@ layout: page
 <div id="tags">
   <section class="bg"></section>
   <h1 class="title">{{ page.title }}</h1>
+
   <ul class="tag-cloud">
     {% for tag in site.tags %}
     <a href="#{{ tag | first | slugize }}">
+      <!-- bgcolor transparency is proportional to the number of posts under this tag -->
       <li class="tag"
         style="background-color: rgba(86,61,124, {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 50 | divided_by: 100.0}})">
         {{ tag | first }}
@@ -15,7 +17,9 @@ layout: page
     </a>
     {% endfor %}
   </ul>
-  <div class="tag-groups">
+
+  <!-- Each tag and its group of posts -->
+  <div class="tag-groups">    
     {% for tag in site.tags %}
     <div class="tag-group">
       {% capture group %}{{ tag | first }}{% endcapture %}
